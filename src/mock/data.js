@@ -60,31 +60,31 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'dbsek21@naver.com',
 };
 
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: '',
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'twitter',
+    //   url: '',
+    // },
+    // {
+    //   id: nanoid(),
+    //   name: 'codepen',
+    //   url: '',
+    // },
+    // {
+    //   id: nanoid(),
+    //   name: 'linkedin',
+    //   url: '',
+    // },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/dayoungee',
     },
   ],
 };
