@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: './file/test.pdf',
+  resume: './file/Resume.pdf',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
