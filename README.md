@@ -7,3 +7,8 @@
 
 ### Tech Stack : netlify, Gatsby, React
 ### React 템플릿을 이용해 제작한 포트폴리오 입니다.
+
+
+#### [개발에정]
+- more 버튼(프로젝트 상세 페이지)
+- 학력 및 경력 페이지
