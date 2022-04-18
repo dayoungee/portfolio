@@ -22,8 +22,7 @@ export const aboutData = {
   paragraphTwo:
     '현재 c++ 개발자로 2년 가까이의 경력을 가지고 있지만, 웹/앱 개발자로의 전향을 원하여 웹 개발 관련 기술을 독학하고 있습니다. React를 집중적으로 스터디하고 있지만, 프론트에만 국한된 것이 아닌 백엔드 기술까지 스터디하여 풀스택 개발자를 목표로 하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천할 것입니다.',
   paragraphThree: '감사합니다.',
-  resume:
-    'https://blogattach.naver.com/8b1e9723360001b49c791a2f1df18ff55902ff98/20220418_34_blogfile/dbsek21_1650267544783_Kdi6J7_pdf/Resume.pdf',
+  resume: 'https://glass-milkshake-24b.notion.site/c6a67e125e01455e8741229aa5040376',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
