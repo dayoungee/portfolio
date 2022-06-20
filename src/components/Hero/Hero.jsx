@@ -26,7 +26,10 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            <span className="text-color-main">{title || '윤다영'} </span>
+            <span className="text-color-main">
+              {title || '윤다영'}
+              {' '}
+            </span>
             {name || '의 포트폴리오'}
             <br />
             {subtitle || "I'm the Developer."}
@@ -41,6 +44,10 @@ const Header = () => {
             </span>
           </p>
         </Fade>
+        <div className="ocean">
+          <div className="wave" />
+          <div className="wave" />
+        </div>
       </Container>
     </section>
   );

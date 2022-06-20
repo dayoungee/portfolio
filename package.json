@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@types/react": "^18.0.14",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.7",
     "gatsby-cli": "^2.8.22",
@@ -34,7 +35,8 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
-    "react-tilt": "^0.1.4"
+    "react-tilt": "^0.1.4",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -48,9 +50,8 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
-    "sass": "^1.50.0"
+    "sass": "^1.52.3"
   },
   "repository": {
     "type": "git",

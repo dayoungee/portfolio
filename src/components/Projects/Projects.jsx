@@ -42,7 +42,10 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <p className="project-wrapper__text-date"> {date || 'None'}</p>
+                      <p className="project-wrapper__text-date"> 
+                        {' '}
+                        {date || 'None'}
+                      </p>
                       <div>
                         <p className="project-wrapper__text-info">
                           {info ||
@@ -58,13 +61,12 @@ const Projects = () => {
                       >
                         More(개발중!)
                       </a>
-
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn text-color-main"
-                          href={repo}
+                          href={repo || '#!'}
                         >
                           Source Code
                         </a>
