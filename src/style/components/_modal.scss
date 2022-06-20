@@ -1,0 +1,14 @@
+.modal-wrapper{
+    padding-left: 4%;
+}
+.modal-wrapper-wrapper {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 50px;
+    position: fixed;
+    top:0;
+    background: $light-blue;
+    box-sizing: border-box;
+    z-index: 4;
+    border-radius: 20px;
+}

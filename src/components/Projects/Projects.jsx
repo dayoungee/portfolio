@@ -5,12 +5,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Modal from "../Modal/Modal";
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,12 +24,21 @@ const Projects = () => {
     }
   }, []);
 
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
-    <section id="projects">
-      <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
+    <div>
+      <Modal close={closeModal} open={modalOpen} />
+      <section id="projects">
+        <Container>
+          <div className="project-wrapper">
+            <Title title="Projects" />
+            {projects.map((project) => {
             const { title, info, info2, url, repo, img, id, date } = project;
 
             return (
@@ -53,15 +64,17 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
+                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,react/button-has-type */}
+                      <button
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
+                        onClick={openModal}
                       >
                         More(개발중!)
-                      </a>
+                      </button>
                       {repo && (
+
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -113,9 +126,10 @@ const Projects = () => {
               </Row>
             );
           })}
-        </div>
-      </Container>
-    </section>
+          </div>
+        </Container>
+      </section>
+    </div>
   );
 };
 

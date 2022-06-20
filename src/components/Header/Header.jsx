@@ -10,10 +10,10 @@ function Header() {
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
     }
+
     useEffect(()=>{
         window.addEventListener('scroll', updateScroll);
     });
-
 
     return(
       <div id={scrollPosition < 100 ? "header" : "change-header"}>

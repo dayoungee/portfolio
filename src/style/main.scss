@@ -6,6 +6,7 @@
 @import './base/typography';
 
 @import './components/buttons';
+@import './components/modal';
 
 @import './layout/footer';
 @import './layout/sections';
@@ -14,7 +15,6 @@
 @import './sections/contact';
 @import './sections/hero';
 @import './sections/projects';
+@import './sections/header';
 
 @import './vendor/css/font-awesome.min.css';
-
-@import './sections/header';
