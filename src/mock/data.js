@@ -7,6 +7,11 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
+export const headerData = {
+  title: 'YDY PORTFOLIO',
+  menu:['ABOUT ME','PROJECTS','CONTACT'],
+  click:["about","projects","contact"],
+}
 // HERO DATA
 export const heroData = {
   title: '윤다영',
