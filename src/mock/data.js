@@ -34,7 +34,7 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: nanoid(),
+    id: 1,
     img: '01.png',
     title: 'Judy go Home',
     date: '(2017.07~2018.08)',
@@ -45,7 +45,7 @@ export const projectsData = [
     repo: 'https://github.com/dayoungee/judygohome', // if no repo, the button will not show up
   },
   {
-    id: nanoid(),
+    id: 2,
     img: '02.png',
     title: 'Tetris',
     date: '(2020.02~2020.03)',
@@ -56,7 +56,7 @@ export const projectsData = [
     repo: 'https://github.com/dayoungee/Tetris', // if no repo, the button will not show up
   },
   {
-    id: nanoid(),
+    id: 3,
     img: '03.png',
     title: '디즈니 공주들',
     date: '(2017.05~2017.05)',
@@ -105,3 +105,42 @@ export const footerData = {
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
+
+export const projectData = [
+  {
+    id: 1,
+    data: "#안녕첫번째 테스트야"
+  },
+  {
+    id: 2,
+    data: "##안녕 두번째 테스트야"
+  },
+  {
+    id: 3,
+    data: `_이렇게 해야될텐데_`
+  },
+];
+export const projectImageData = [
+  {
+    id: 1,
+    path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
+          "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
+          "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+    ]
+  },
+  {
+    id: 2,
+    path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
+      "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
+      "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+    ]
+  },
+  {
+    id: 3,
+    path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
+      "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
+      "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+    ]
+  },
+];
+

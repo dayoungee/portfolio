@@ -13,6 +13,7 @@ const Projects = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [useId, setUseId] = useState(0);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -24,8 +25,9 @@ const Projects = () => {
     }
   }, []);
 
-  const openModal = () => {
+  const openModal = (id) => () => {
     setModalOpen(true);
+    setUseId(id);
   };
   const closeModal = () => {
     setModalOpen(false);
@@ -33,7 +35,7 @@ const Projects = () => {
 
   return (
     <div>
-      <Modal close={closeModal} open={modalOpen} />
+      <Modal close={closeModal} open={modalOpen} id={useId || 0} />
       <section id="projects">
         <Container>
           <div className="project-wrapper">
@@ -69,7 +71,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        onClick={openModal}
+                        onClick={openModal(id)}
                       >
                         More(개발중!)
                       </button>
