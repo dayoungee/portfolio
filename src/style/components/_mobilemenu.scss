@@ -1,0 +1,17 @@
+.mobile-menu{
+ padding-top: 70px;
+}
+
+.mobile-menu-box{
+  position: fixed;
+  z-index: 10;
+  height: 80px;
+  width: 100vw;
+  background: white;
+  list-style: none;
+  padding-right: 7%;
+}
+
+.mobile-menu-li{
+  cursor: pointer;
+}
