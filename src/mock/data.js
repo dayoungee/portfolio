@@ -64,7 +64,7 @@ export const projectsData = [
     info2:
       'MySql DB를 활용하였으며 로그인, 로그아웃, 회원가입, 회원탈퇴, 게시판, 익명게시판 기능을 구현했습니다.',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/dayoungee/webpage_PHP', // if no repo, the button will not show up
   },
 ];
 
@@ -125,21 +125,32 @@ export const projectImageData = [
     id: 1,
     path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
           "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
-          "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+        "https://github.com/assets/55998706/e0d0e500-20d9-11ea-92db-7a0e98530e45",
+        "https://github.com/assets/55998706/11b11a00-20da-11ea-9815-9da5128d24b9",
+        "https://github.com/assets/55998706/3dcc9b00-20da-11ea-8d13-226c32e59a1a",
+          "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5",
+        "https://github.com/assets/55998706/6fddfd00-20da-11ea-8e56-c7dfb73b5c56"
     ]
   },
   {
     id: 2,
-    path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
-      "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
-      "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+    path: ["https://github.com/assets/55998706/7dc5cd1f-402c-4a27-aa76-179f07d39c63",
+      "https://github.com/assets/55998706/5e1ba1a1-2e54-492e-ae06-aed4f4fb6c7e",
+      "https://github.com/assets/55998706/438fc2e8-a568-48c8-ab8e-5cb2a23376ca",
+        "https://github.com/assets/55998706/2b32cfdb-9508-41b4-974c-727b64f28a29",
+        "https://github.com/assets/55998706/b99316d5-b316-4118-a4af-f7b643712836",
+        "https://github.com/assets/55998706/6572052c-ad6e-4ae4-a03a-e7db2f6d46e9",
+        "https://github.com/assets/55998706/d2a53078-9919-4cf9-9ddd-e33b584ac646"
     ]
   },
   {
     id: 3,
-    path: ["https://github.com/assets/55998706/cf87d880-20d9-11ea-8f3d-468c79a12b31",
-      "https://github.com/assets/55998706/2097cc80-20da-11ea-8259-378dadf70af7",
-      "https://github.com/assets/55998706/32796f80-20da-11ea-85e4-cc10b26daee5"
+    path: ["https://github.com/assets/55998706/8bd1a100-15fa-11ea-88ea-557ea1ad4cfd",
+      "https://github.com/assets/55998706/8c6a3780-15fa-11ea-93a3-3f0979ecde04",
+      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-8502-5f98128b08e9",
+        "https://github.com/assets/55998706/8d02ce00-15fa-11ea-85f0-9b6ed0366ca6",
+        "https://github.com/assets/55998706/8d02ce00-15fa-11ea-96be-0f662e6c9ba2",
+        "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
     ]
   },
 ];

@@ -17,18 +17,20 @@ const Slider = ( props ) => {
     },[projectImage]);
 
     return(
-      <Carousel autoPlay animation="slide">
-        {
-            path.map( (item) => <Item item={item} /> )
+      <div className="slider-wrapper">
+        <Carousel autoPlay animation="slide">
+          {
+                path.map( (item) => <Item item={item} /> )
         }
-      </Carousel>
+        </Carousel>
+      </div>
     )
 }
 function Item(props)
 {
     return (
         // eslint-disable-next-line jsx-a11y/alt-text,react/destructuring-assignment,react/prop-types
-      <img src={props.item} />
+      <img className="project-image" src={props.item} />
     )
 }
 export default Slider;
