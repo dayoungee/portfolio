@@ -120,7 +120,8 @@ export const githubButtons = {
 export const projectData = [
   {
     id: 1,
-    data: "#안녕첫번째 테스트야"
+    data: `#JUDY GO HOME
+    ===========================================`
   },
   {
     id: 2,
