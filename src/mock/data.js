@@ -66,6 +66,17 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/dayoungee/webpage_PHP', // if no repo, the button will not show up
   },
+  {
+    id: 4,
+    img: '04.png',
+    title: '포트폴리오',
+    date: '(2022.05~)',
+    info: 'react로 개발한 개인 포트폴리오 웹 사이트입니다.',
+    info2:
+        '본래 있던 디자인 템플릿을 따와, 메인페이지를 수정하고, 헤더와 모달 기능을 추가했습니다.',
+    url: '',
+    repo: 'https://github.com/dayoungee/portfolio', // if no repo, the button will not show up
+  },
 ];
 
 // CONTACT DATA
@@ -109,7 +120,8 @@ export const githubButtons = {
 export const projectData = [
   {
     id: 1,
-    data: "#안녕첫번째 테스트야"
+    data: `#JUDY GO HOME
+    ===========================================`
   },
   {
     id: 2,
@@ -118,6 +130,10 @@ export const projectData = [
   {
     id: 3,
     data: `_이렇게 해야될텐데_`
+  },
+  {
+    id: 4,
+    data: `_이렇게 해야될텐데44_`
   },
 ];
 export const projectImageData = [
@@ -151,6 +167,16 @@ export const projectImageData = [
         "https://github.com/assets/55998706/8d02ce00-15fa-11ea-85f0-9b6ed0366ca6",
         "https://github.com/assets/55998706/8d02ce00-15fa-11ea-96be-0f662e6c9ba2",
         "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
+    ]
+  },
+  {
+    id: 4,
+    path: ["https://github.com/assets/55998706/8bd1a100-15fa-11ea-88ea-557ea1ad4cfd",
+      "https://github.com/assets/55998706/8c6a3780-15fa-11ea-93a3-3f0979ecde04",
+      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-8502-5f98128b08e9",
+      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-85f0-9b6ed0366ca6",
+      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-96be-0f662e6c9ba2",
+      "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
     ]
   },
 ];
