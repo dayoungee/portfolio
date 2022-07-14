@@ -77,6 +77,17 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/dayoungee/portfolio', // if no repo, the button will not show up
   },
+  {
+    id: 5,
+    img: '05.png',
+    title: 'K-관광 Kiosk',
+    date: '(2022.06~2022.06)',
+    info: 'react로 개발한 관광키오스크 메인화면입니다.',
+    info2:
+        '대기화면만 개발된 샘플용 입니다. 회사 내부, 비 프로젝트로 진행하였으며, 현재 프로젝트가 무산되어 샘플 개발이 중지된 상태입니다.',
+    url: '',
+    repo: 'https://github.com/dayoungee/k-kiosk', // if no repo, the button will not show up
+  },
 ];
 
 // CONTACT DATA
