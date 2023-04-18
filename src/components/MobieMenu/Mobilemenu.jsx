@@ -1,13 +1,24 @@
-import React, {useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import {Link} from "react-scroll";
 import PortfolioContext from "../../context/context";
 
 const Mobilemenu = () => {
     const { header } = useContext(PortfolioContext);
     const { menu, click } = header;
+
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', updateScroll);
+    });
+
     return(
       <div className="mobile-menu">
-        <ul className="mobile-menu-box">
+        <ul className={scrollPosition < 100 ? "change-mobile-menu-box" : "mobile-menu-box"}>
           <div>
             {menu && menu.map((item, i) => (
               <li className="mobile-menu-li">

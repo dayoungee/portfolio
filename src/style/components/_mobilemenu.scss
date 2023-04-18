@@ -12,6 +12,15 @@
   padding-right: 7%;
 }
 
+.change-mobile-menu-box{
+  position: fixed;
+  z-index: 10;
+  height: 80px;
+  width: 100vw;
+  list-style: none;
+  padding-right: 7%;
+}
+
 .mobile-menu-li{
   cursor: pointer;
 }

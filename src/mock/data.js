@@ -25,7 +25,7 @@ export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: '안녕하세요, 1일 1커밋을 목표로하는, 도전하는 것이 즐거운 개발자 윤다영입니다.',
   paragraphTwo:
-    '현재 c++ 개발자로 2년 가까이의 경력을 가지고 있지만, 웹/앱 개발자로의 전향을 원하여 웹 개발 관련 기술을 독학하고 있습니다. React를 집중적으로 스터디하고 있지만, 프론트에만 국한된 것이 아닌 백엔드 기술까지 스터디하여 풀스택 개발자를 목표로 하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천할 것입니다.',
+    'c++개발자로 2년 일한 경력이 있으나, 백엔드 개발자로의 전향을 원하여 현재 백엔드 기술을 공부하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천하는 개발자가 될 것 입니다.',
   paragraphThree: '감사합니다.',
   resume: 'https://glass-milkshake-24b.notion.site/c6a67e125e01455e8741229aa5040376',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
@@ -51,7 +51,7 @@ export const projectsData = [
     date: '(2020.02~2020.03)',
     info: 'MFC를 활용한 다이얼로그 기반의 테트리스 게임입니다. MFC 스터디 용으로 개발했습니다.',
     info2:
-      '첫 직장에서 사용하던 MFC, C++ 언어에 익숙해지기 위해서 공부용으로 개발한 게임입니다. 레지스트리 값을 이용해 게임의 배경색을 변경 가능하도록 구현하였으며, 1대1 채팅, MySQL DB를 활용한 로그인, 회원가입 기능을 구현했습니다.',
+      '첫 직장에서 사용하던 MFC, C++ 언어에 익숙해지기 위해서 공부용으로 개발한 게임입니다. 레지스트리 값을 이용해 게임의 배경색을 변경 가능하도록 구현하였으며, TCP통신을 통한 1대1 채팅, MySQL를 활용하여 간단한 로그인, 회원가입 기능을 구현했습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/Tetris', // if no repo, the button will not show up
   },
@@ -62,7 +62,7 @@ export const projectsData = [
     date: '(2017.05~2017.05)',
     info: '대학시절 프로젝트로 php언어 기반의 커뮤니티 웹입니다.',
     info2:
-      'MySql DB를 활용하였으며 로그인, 로그아웃, 회원가입, 회원탈퇴, 게시판, 익명게시판 기능을 구현했습니다.',
+      'MySql를 활용하였으며 로그인, 로그아웃, 회원가입, 회원탈퇴, 게시판, 익명게시판 기능을 구현했습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/webpage_PHP', // if no repo, the button will not show up
   },
@@ -99,11 +99,11 @@ export const footerData = {
     //   name: 'codepen',
     //   url: '',
     // },
-    // {
-    //   id: nanoid(),
-    //   name: 'linkedin',
-    //   url: '',
-    // },
+     {
+       id: nanoid(),
+       name: 'rss',
+       url: 'https://memodayoungee.tistory.com/',
+     },
     {
       id: nanoid(),
       name: 'github',
