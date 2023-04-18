@@ -113,7 +113,7 @@ export const footerData = {
      {
        id: nanoid(),
        name: 'rss',
-       url: 'https://memodayoungee.tistory.com/',
+       url: 'https://memodayoungee.tistory.com/', 
      },
     {
       id: nanoid(),
