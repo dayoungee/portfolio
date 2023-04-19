@@ -21,6 +21,7 @@
 
 @import './vendor/css/font-awesome.min.css';
 
-body{
-  overflow-x:hidden;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
