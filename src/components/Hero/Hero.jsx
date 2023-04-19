@@ -51,7 +51,7 @@ const Header = () => {
               <div className="wave" />
             </div>
           )
-              : <div className="ocean" />
+              : <div />
           
         }
       </Container>
