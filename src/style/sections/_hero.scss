@@ -67,6 +67,10 @@
 // best seen at 1500px or less
 
 
+div{
+  touch-action: none;
+}
+
 .ocean {
   height: 5%;
   width:100%;
