@@ -19,7 +19,7 @@ const Header = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-  }, []);
+  },[]);
 
   return (
     <section id="hero" className="jumbotron">
@@ -44,10 +44,16 @@ const Header = () => {
             </span>
           </p>
         </Fade>
-        <div className="ocean">
-          <div className="wave" />
-          <div className="wave" />
-        </div>
+        {
+          isDesktop ? (
+            <div className="ocean">
+              <div className="wave" />
+              <div className="wave" />
+            </div>
+          )
+              : <div className="ocean" />
+          
+        }
       </Container>
     </section>
   );
