@@ -15,6 +15,7 @@ function Header() {
 
     const handleResize = () => {
         setResize(window.innerWidth);
+        console.log(window.innerWidth);
     };
 
     const updateScroll = () => {
@@ -34,6 +35,7 @@ function Header() {
     });
 
     useEffect(() => {
+        setResize(window.innerWidth);
         window.addEventListener("resize", handleResize);
         return () => {
             window.removeEventListener("resize", handleResize);
