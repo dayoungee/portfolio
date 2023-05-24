@@ -70,7 +70,7 @@ const Projects = () => {
                       <button
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        className="cta-btn cta-btn--hero hidden"
                         onClick={openModal(id)}
                       >
                         More(개발중!)
@@ -80,7 +80,8 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn cta-btn--hero"
+                          /* className="cta-btn text-color-main" */
                           href={repo || '#!'}
                         >
                           Source Code

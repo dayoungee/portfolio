@@ -40,7 +40,7 @@ export const projectsData = [
     date: '(2017.07~2018.08)',
     info: 'C# 유니티로 개발한 2D플랫포머 게임입니다. 학술제에 출품하였으며 금상을 수상하였습니다.',
     info2:
-      '동시에 협업 스터디, 발표에서도 수상을 받았으며 협업 스터디를 했을 당시에는 플레이어의 기본적인 동작, 키보드 이벤트만 구현이 되어 있는 상태였습니다. 이후, 학술제를 위해 또 다른 엔딩, 몬스터 피력, 플레이어를 따라가는 AI몬스터 등 게임성을 더해 학술제에서 수상할 수 있었습니다.',
+      '협업 스터디, 스터디 결과 발표에서 수상을 받았습니다. 협업 스터디를 했을 당시에는 플레이어의 기본적인 동작, 키보드 이벤트만 구현이 되어 있는 상태였습니다. 이후, 학술제를 위해 Score에 따른 Perfect 엔딩, 몬스터 피력, 플레이어를 따라가는 AI몬스터 등 게임성을 더해 학술제에서 수상할 수 있었습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/judygohome', // if no repo, the button will not show up
   },
@@ -57,17 +57,6 @@ export const projectsData = [
   },
   {
     id: 3,
-    img: '03.png',
-    title: '디즈니 공주들',
-    date: '(2017.05~2017.05)',
-    info: '대학시절 프로젝트로 php언어 기반의 커뮤니티 웹입니다.',
-    info2:
-      'MySql를 활용하였으며 로그인, 로그아웃, 회원가입, 회원탈퇴, 게시판, 익명게시판 기능을 구현했습니다.',
-    url: '',
-    repo: 'https://github.com/dayoungee/webpage_PHP', // if no repo, the button will not show up
-  },
-  {
-    id: 4,
     img: '04.png',
     title: '포트폴리오',
     date: '(2022.05~)',
@@ -76,17 +65,6 @@ export const projectsData = [
         '본래 있던 디자인 템플릿을 따와, 메인페이지를 수정하고, 헤더와 모달 기능을 추가했습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/portfolio', // if no repo, the button will not show up
-  },
-  {
-    id: 5,
-    img: '05.png',
-    title: 'K-관광 Kiosk',
-    date: '(2022.06~2022.06)',
-    info: 'react로 개발한 관광키오스크 메인화면입니다.',
-    info2:
-        '대기화면만 개발된 샘플용 입니다. 회사 내부, 비 프로젝트로 진행하였으며, 현재 프로젝트가 무산되어 샘플 개발이 중지된 상태입니다.',
-    url: '',
-    repo: 'https://github.com/dayoungee/k-kiosk', // if no repo, the button will not show up
   },
 ];
 
@@ -131,19 +109,31 @@ export const githubButtons = {
 export const projectData = [
   {
     id: 1,
+    info: `###주요 기능: 아이템 획득, 캐릭터 이동, 적 자동 이동(일정한 루틴으로 이동, 반경 내 진입한 캐릭터 따라가기), 사다리 오르기, 장애물 밀어내기, 점수 4000점 이상 & 목숨 3개 유지시 퍼펙트 클리어 엔딩`
+    + `<br>`
+    + `<br>`
+    + `GitHub: [https://github.com/dayoungee/judygohome](https://github.com/dayoungee/judygohome)`
+    + `<br>`
+    + `<br>`
+    + `TechStack: Unity, C&#35;`,
     data: `#JUDY GO HOME
-    ===========================================`
+    `
+    + `<br>`
+    +`##📌소개`
   },
   {
     id: 2,
-    data: "##안녕 두번째 테스트야"
+    info: `테스트테스트테스트`,
+    data: "##안녕 두번째 테스트야<br>"
   },
   {
     id: 3,
+    info: `테스트테스트테스트`,
     data: `_이렇게 해야될텐데_`
   },
   {
     id: 4,
+    info: `테스트테스트테스트`,
     data: `_이렇게 해야될텐데44_`
   },
 ];
@@ -180,15 +170,19 @@ export const projectImageData = [
         "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
     ]
   },
-  {
-    id: 4,
-    path: ["https://github.com/assets/55998706/8bd1a100-15fa-11ea-88ea-557ea1ad4cfd",
-      "https://github.com/assets/55998706/8c6a3780-15fa-11ea-93a3-3f0979ecde04",
-      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-8502-5f98128b08e9",
-      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-85f0-9b6ed0366ca6",
-      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-96be-0f662e6c9ba2",
-      "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
-    ]
-  },
 ];
+
+export const projectFontData = {
+      font: `<style type="text/css">
+            @font-face {
+                font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+            }
+            body{
+                font-family: 'TheJamsil5Bold';
+            }</style>`,
+};
+
 

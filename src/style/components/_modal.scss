@@ -1,7 +1,9 @@
 .modal-wrapper{
-    padding-left: 4%;
+    padding: 4%;
+    overflow-y:visible;
 }
 .modal-wrapper-wrapper {
+    padding: 4%;
     width: 90vw;
     height: 90vh;
     margin-top: 50px;
@@ -11,4 +13,20 @@
     box-sizing: border-box;
     z-index: 4;
     border-radius: 20px;
+}
+
+.project-info{
+    float: left;
+    text-align: left;
+    margin-top: 2%;
+    width: 40%;
+}
+.project-data{
+    width:100%;
+    float: left;
+    text-align: left;
+}
+
+#modal-exit{
+    float: right;
 }
