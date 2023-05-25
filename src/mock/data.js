@@ -109,17 +109,7 @@ export const githubButtons = {
 export const projectData = [
   {
     id: 1,
-    info: `###주요 기능: 아이템 획득, 캐릭터 이동, 적 자동 이동(일정한 루틴으로 이동, 반경 내 진입한 캐릭터 따라가기), 사다리 오르기, 장애물 밀어내기, 점수 4000점 이상 & 목숨 3개 유지시 퍼펙트 클리어 엔딩`
-    + `<br>`
-    + `<br>`
-    + `GitHub: [https://github.com/dayoungee/judygohome](https://github.com/dayoungee/judygohome)`
-    + `<br>`
-    + `<br>`
-    + `TechStack: Unity, C&#35;`,
-    data: `#JUDY GO HOME
-    `
-    + `<br>`
-    +`##📌소개`
+    info: ``
   },
   {
     id: 2,
@@ -162,7 +152,10 @@ export const projectImageData = [
   },
   {
     id: 3,
-    path: ["https://user-images.githubusercontent.com/55998706/240904424-b638481c-2e07-47f9-97f4-c225f9d58fbc.png"
+    path: ["https://user-images.githubusercontent.com/55998706/240904424-b638481c-2e07-47f9-97f4-c225f9d58fbc.png",
+        "https://user-images.githubusercontent.com/55998706/240954653-a5b26828-c367-40a8-936a-35bbc7ea659d.png",
+        "https://user-images.githubusercontent.com/55998706/240954734-96a4f07c-3b8a-4fb1-885d-4fe036078d98.png",
+        "https://user-images.githubusercontent.com/55998706/240954631-f7d14414-0338-44b3-b59c-34debec17624.png"
     ]
   },
 ];
@@ -170,14 +163,15 @@ export const projectImageData = [
 export const projectFontData = {
       font: `<style type="text/css">
             @font-face {
-                font-family: 'TheJamsil5Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 600;
     font-style: normal;
-            }
+}
             body{
-                font-family: 'TheJamsil5Bold';
-            }</style>`,
+                font-family: 'SUITE-Regular';
+            }</style>
+`
 };
 
 

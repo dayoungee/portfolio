@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -24,6 +25,13 @@ module.exports = {
       options: {
         name: `file`,
         path: `${__dirname}/file/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `file`,
+        path: `${__dirname}/src/project`,
       },
     },
     {

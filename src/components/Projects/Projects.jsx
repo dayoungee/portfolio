@@ -73,7 +73,7 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         onClick={openModal(id)}
                       >
-                        More(개발중!)
+                        More
                       </button>
                       {repo && (
 
