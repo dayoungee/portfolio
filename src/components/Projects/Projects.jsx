@@ -4,8 +4,8 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
 import Modal from "../Modal/Modal";
+import Slider from "../Slider/Slider";
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -41,7 +41,7 @@ const Projects = () => {
           <div className="project-wrapper">
             <Title title="Projects" />
             {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id, date } = project;
+            const { title, info, info2, repo, id, date } = project;
 
             return (
               <Row key={id}>
@@ -70,7 +70,7 @@ const Projects = () => {
                       <button
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero hidden"
+                        className="cta-btn cta-btn--hero"
                         onClick={openModal(id)}
                       >
                         More(개발중!)
@@ -80,8 +80,8 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          /* className="cta-btn text-color-main" */
+                          /* className="cta-btn cta-btn--hero" */
+                          className="cta-btn text-color-main"
                           href={repo || '#!'}
                         >
                           Source Code
@@ -99,14 +99,14 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
+                      {/* <a
                         href={url || '#!'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
+                      > */}
+                      <Tilt
+                        options={{
                             reverse: false,
                             max: 8,
                             perspective: 1000,
@@ -117,12 +117,13 @@ const Projects = () => {
                             reset: true,
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
+                      >
+                        <div data-tilt className="thumbnail rounded">
+                          {/* <ProjectImg alt={title} filename={img} /> */}
+                          <Slider id={id} />
+                        </div>
+                      </Tilt>
+                      {/* </a> */}
                     </div>
                   </Fade>
                 </Col>

@@ -162,12 +162,7 @@ export const projectImageData = [
   },
   {
     id: 3,
-    path: ["https://github.com/assets/55998706/8bd1a100-15fa-11ea-88ea-557ea1ad4cfd",
-      "https://github.com/assets/55998706/8c6a3780-15fa-11ea-93a3-3f0979ecde04",
-      "https://github.com/assets/55998706/8d02ce00-15fa-11ea-8502-5f98128b08e9",
-        "https://github.com/assets/55998706/8d02ce00-15fa-11ea-85f0-9b6ed0366ca6",
-        "https://github.com/assets/55998706/8d02ce00-15fa-11ea-96be-0f662e6c9ba2",
-        "https://github.com/assets/55998706/8d9b6480-15fa-11ea-8fc3-1a0cbdb9c672"
+    path: ["https://user-images.githubusercontent.com/55998706/240904424-b638481c-2e07-47f9-97f4-c225f9d58fbc.png"
     ]
   },
 ];
