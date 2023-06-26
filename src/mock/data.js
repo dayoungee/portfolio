@@ -27,7 +27,7 @@ export const aboutData = {
   paragraphTwo:
     'c++개발자로 2년 일한 경력이 있으나, 백엔드 개발자로의 전향을 원하여 현재 백엔드 기술을 공부하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천하는 개발자가 될 것 입니다.',
   paragraphThree: '감사합니다.',
-  resume: 'https://glass-milkshake-24b.notion.site/c6a67e125e01455e8741229aa5040376',
+  resume: 'https://glass-milkshake-24b.notion.site/6a04938519914cb8955548d5d911a477',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
