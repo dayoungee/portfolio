@@ -1,8 +1,8 @@
 .modal-wrapper{
     padding: 4%;
 }
+
 .modal-wrapper-wrapper {
-    padding: 4%;
     width: 90vw;
     height: 90vh;
     margin-top: 50px;
@@ -15,19 +15,15 @@
     overflow-y:scroll;
 }
 
-.project-info{
-    float: left;
-    text-align: left;
-    margin-top: 2%;
-    width: 40%;
-}
 .project-data{
+    padding: 5%;
     width:100%;
     height: 90%;
-    float: left;
     text-align: left;
 }
 
 #modal-exit{
-    float: right;
+    position: fixed;
+    top: 60px;
+    right: 5%;
 }
