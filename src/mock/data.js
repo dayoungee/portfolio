@@ -73,7 +73,7 @@ export const projectsData = [
         date: '(2023.06.14~2023.06.26)',
         info: '프론트 엔드 4명, 백엔드 3명 총 7명으로 구성된 팀에서 개발한 Stackoverflow Clone Coding 프로젝트입니다.',
         info2:
-            'Stackoverflow의 Q&A 게시판 기능을 똑같이 구현한 프로젝트입니다.',
+            'Stackoverflow의 Q&A 게시판 기능을 똑같이 구현한 프로젝트입니다. 해당 팀에서 팀장을 맡았으며, 테스트 서버(EC2)와 CI/CD(Jenkins)를 직접 구축하여 배포 관련 경험을 쌓을 수 있었고, 테스트 코드도 작성했기에 의미있는 프로젝트였습니다.',
         url: '',
         repo: 'https://github.com/dayoungee/stackoverflow-clone-coding',
     },
@@ -82,9 +82,9 @@ export const projectsData = [
         img: '04.png',
         title: 'PliP',
         date: '(2023.06.29~2023.07.26)',
-        info: '프론트 엔드 3명, 백엔드 3명 총 6명으로 구성된 팀에서 개발한 여행 일정 관리 일지 작성 웹 서비스 입니다.',
+        info: '프론트 엔드 3명, 백엔드 3명 총 6명으로 구성된 팀에서 개발한 여행 일정 관리 및 일지 작성 웹 서비스 입니다.',
         info2:
-            '개발중',
+            'JWT 인증 방식을 처음으로 직접 사용했으며, 실제로 개발을 함으로써 Spring Security, OAuth2.0에 대해서 학습할 수 있었고, 말로만 들었던 Redis를 사용해볼 수 있었습니다. 마지막으로 JavaMailSender를 사용함으로써 메일 전송 기능을 구현할 수 있었습니다.',
         url: '',
         repo: 'https://github.com/dayoungee',
     },
