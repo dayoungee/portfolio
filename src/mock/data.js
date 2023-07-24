@@ -86,7 +86,7 @@ export const projectsData = [
         info2:
             'JWT 인증 방식을 처음으로 직접 사용했으며, 실제로 개발을 함으로써 Spring Security, OAuth2.0에 대해서 학습할 수 있었고, 말로만 들었던 Redis를 사용해볼 수 있었습니다. 마지막으로 JavaMailSender를 사용함으로써 메일 전송 기능을 구현할 수 있었습니다.',
         url: '',
-        repo: 'https://github.com/dayoungee',
+        repo: 'https://github.com/dayoungee/plip',
     },
 ];
 
