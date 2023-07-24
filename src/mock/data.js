@@ -81,7 +81,7 @@ export const projectsData = [
         id: 4,
         img: '04.png',
         title: 'PliP',
-        date: '(2023.06.29~2023.07.26)',
+        date: '(2023.06.29~2023.07.21)',
         info: '프론트 엔드 3명, 백엔드 3명 총 6명으로 구성된 팀에서 개발한 여행 일정 관리 및 일지 작성 웹 서비스 입니다.',
         info2:
             'JWT 인증 방식을 처음으로 직접 사용했으며, 실제로 개발을 함으로써 Spring Security, OAuth2.0에 대해서 학습할 수 있었고, 말로만 들었던 Redis를 사용해볼 수 있었습니다. 마지막으로 JavaMailSender를 사용함으로써 메일 전송 기능을 구현할 수 있었습니다.',
@@ -193,7 +193,9 @@ export const projectImageData = [
     {
         id: 4,
         path: ["https://user-images.githubusercontent.com/55998706/253759537-3a2d9068-1ae5-40ef-b9ba-1117bd776c64.png",
-            "https://user-images.githubusercontent.com/55998706/253759951-cd12f169-af0a-4957-bfad-a6574df0ae71.png"
+            "https://user-images.githubusercontent.com/55998706/253759951-cd12f169-af0a-4957-bfad-a6574df0ae71.png",
+            "https://user-images.githubusercontent.com/55998706/255637074-31b988fc-e886-41a9-b972-ce7b140a5917.png",
+            "https://user-images.githubusercontent.com/55998706/255637687-0dca9369-234e-4e22-8547-290258e60114.png"
         ]
     },
 ];
