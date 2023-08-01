@@ -16,9 +16,11 @@ import {
     headerData,
     projectData,
     projectImageData,
-    projectFontData
+    projectFontData,
+    careerData
 } from '../mock/data';
 import Header from "./Header/Header";
+import Career from "./Carrer/Career";
 
 function App() {
   const [hero, setHero] = useState({});
@@ -30,6 +32,7 @@ function App() {
   const [project, setProject] = useState([]);
   const [projectImage, setProjectImage] = useState([]);
   const [projectFont, setProjectFont] = useState({});
+  const [careers, setCareers] = useState([]);
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -41,13 +44,15 @@ function App() {
     setProject([ ...projectData ]);
     setProjectImage([ ...projectImageData ]);
     setProjectFont({ ...projectFontData });
+    setCareers([ ...careerData ]);
   }, []);
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer, header, project, projectImage, projectFont }}>
+    <PortfolioProvider value={{ hero, about, projects, contact, footer, header, project, projectImage, projectFont, careers }}>
       <Header />
       <Hero />
       <About />
       <Projects />
+      <Career />
       <Contact />
       <Footer />
     </PortfolioProvider>

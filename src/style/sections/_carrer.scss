@@ -1,0 +1,92 @@
+#career {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -15rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .career-wrapper-project{
+    margin-bottom: 15rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    @include respond(not-phone) {
+      border-left : thin solid $dark-color;
+    }
+
+    .row {
+      margin-bottom: 8rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .career-wrapper {
+    margin-bottom: 15rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    .row {
+      margin-bottom: 8rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__text {
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem !important;
+      }
+
+      @include respond(tab-land) {
+        margin-bottom: 4.8rem;
+      }
+
+      &-img-wrapper{
+        text-align: center;
+        margin-bottom: 2rem;
+        &-img {
+          width: 200px;
+          border-radius: 50%;
+          border:1px solid $dark-color;
+        }
+      }
+      &-title {
+        font-weight: bold;
+        //margin-bottom: 1.8rem;
+        font-size: $mid-font-size;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+      &-date {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #B2EBF4
+      }
+
+      &-info {
+        text-align: left;
+        margin-right: 1.5rem;
+      }
+
+      & p > a {
+        color: $secondary-color;
+      }
+    }
+
+  }
+}

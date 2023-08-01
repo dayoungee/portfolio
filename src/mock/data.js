@@ -9,8 +9,8 @@ export const headData = {
 
 export const headerData = {
     title: 'YDY PORTFOLIO',
-    menu: ['ABOUT ME', 'PROJECTS', 'CONTACT'],
-    click: ["about", "projects", "contact"],
+    menu: ['ABOUT ME', 'PROJECTS', 'CAREER',  'CONTACT'],
+    click: ["about", "projects", "career",  "contact"],
 }
 // HERO DATA
 export const heroData = {
@@ -30,6 +30,24 @@ export const aboutData = {
     resume: 'https://glass-milkshake-24b.notion.site/6a04938519914cb8955548d5d911a477',
     // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
+
+// CAREER DATA
+export const careerData = [
+    {
+        id: 1,
+        name: "(주)케이씨티",
+        date: "2021.03 ~ 2023.02",
+        description: "금융 및 공공 부문의 단말 시스템 제조 회사로 소프트웨어 개발을 담당하고 있는 연구 2팀에 정규직으로 입사",
+        img:"https://user-images.githubusercontent.com/55998706/257448287-ee2b6d50-4060-43be-857b-d46e256881cb.png"
+    },
+    {
+        id: 2,
+        name: "뉴크",
+        date: "2020.02 ~ 2020.09",
+        description: "건축관련 SW를 개발하는 스타트업으로 6개월 계약직으로 입사 후, 연장 근무",
+        img: "https://user-images.githubusercontent.com/55998706/257444556-3b6665f2-cc36-4056-b49f-a0b74e7d16d1.jpg"
+    },
+];
 
 // PROJECTS DATA
 export const projectsData = [

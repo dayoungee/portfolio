@@ -22,8 +22,6 @@ const ProjectData = ({ projectId }) => (
     render={(data) => {
             const projectData = data.files.edges.find((n) => n.node.frontmatter.title.includes(projectId));
             if (!projectData) return null;
-        // eslint-disable-next-line no-lone-blocks
-            {/* eslint-disable-next-line react/no-danger */}
             return <div className="project-data" dangerouslySetInnerHTML={{ __html: projectData.node.html }} />
         }}
   />

@@ -43,6 +43,12 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       @content;
     } //1800px +
   }
+
+  @if $breakpoint == not-phone {
+    @media (min-width: 62em) {
+      @content;
+    }
+  }
 }
 
 // Border White Mixin
