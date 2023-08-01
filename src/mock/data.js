@@ -110,7 +110,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-    cta: '',
+    cta: '여기까지 읽어주셔서 감사합니다!',
     btn: '',
     email: 'dbsek21@naver.com',
 };
