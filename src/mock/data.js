@@ -25,9 +25,9 @@ export const aboutData = {
     img: 'profile.jpg',
     paragraphOne: '안녕하세요, 열정 가득한 개발자 윤다영입니다.',
     paragraphTwo: '나를 한마디로 표현한다면? "중력(Gravity)" 같은 사람! 중력처럼 사람을 끌어당기는 힘으로 협업과 소통을 통해 프로젝트를 이끌겠습니다. ' +
-        '2년 8개월의 경력을 보유하고 있으며, 현재 서버 개발자로의 전향을 원하여 백엔드 기술을 공부하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천하는 개발자가 될 것 입니다.',
+        '2년 8개월의 경력을 보유하고 있으며, 현재 백엔드 기술을 공부하고 있습니다. 앞으로의 성장을 위해 항상 도전하고, 실천하는 개발자가 될 것 입니다.',
     paragraphThree: '감사합니다.',
-    resume: 'https://glass-milkshake-24b.notion.site/6a04938519914cb8955548d5d911a477',
+    resume: 'https://glass-milkshake-24b.notion.site/c13de147b908499b85e71b348f96d09e?pvs=4',
     // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
