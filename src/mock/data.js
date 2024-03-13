@@ -36,9 +36,9 @@ export const careerData = [
   {
     id: 1,
     name: "(주)제네시스네스트",
-    date: "2024.01",
+    date: "2024.01 ~",
     description: "BackEnd 개발을 담당하고 있는 서버팀에 정규직으로 입사",
-    img: "../images/genesisnest.jpg"
+    img: 'https://private-user-images.githubusercontent.com/55998706/312495454-15761107-443d-443b-a461-beef648ff5e6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNDAzNzEsIm5iZiI6MTcxMDM0MDA3MSwicGF0aCI6Ii81NTk5ODcwNi8zMTI0OTU0NTQtMTU3NjExMDctNDQzZC00NDNiLWE0NjEtYmVlZjY0OGZmNWU2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzEzVDE0Mjc1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE4MDNhNDAxNzNjNjc1NGFhMGU2ZDU3NzEzNGNiN2FhNWE3MDJhNzNiNjI2Y2EwMjZhNDk2Yjc1NzNkZDVjZWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.29JY3kn1WgWLd_ybJVs_MD9Ycm94Pkl5rzWYucgHIM4'
   },
   {
     id: 2,
