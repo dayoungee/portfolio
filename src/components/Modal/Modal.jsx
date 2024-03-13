@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react';
 import PropTypes from "prop-types";
 import showdown from "showdown";
-import {IoIosCloseCircleOutline} from "react-icons/all";
+import {IoIosCloseCircleOutline} from "react-icons/io";
 import {Button} from "@mui/material";
 import PortfolioContext from "../../context/context";
 import ProjectData from "../Projects/ProjectData";
