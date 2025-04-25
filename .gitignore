@@ -69,3 +69,9 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 yarn.lock
+
+.idea
+*.iws
+*.iml
+*.ipr
+out/
