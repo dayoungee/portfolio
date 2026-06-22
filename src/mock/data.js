@@ -62,43 +62,32 @@ export const projectsData = [
     id: 1,
     img: '01.png',
     title: 'Judy go Home',
-    date: '(2017.07~2018.08)',
-    info: 'C# 유니티로 개발한 2D플랫포머 게임입니다. 학술제에 출품하였으며 금상을 수상하였습니다.',
+    date: '(2017.07 ~ 2018.08)',
+    info: 'C#과 Unity 기반으로 개발한 2D 플랫포머 게임으로, 교내 소프트웨어 학술제에서 금상을 수상한 프로젝트입니다.',
     info2:
-      '협업 스터디, 스터디 결과 발표에서 수상을 받았습니다. 협업 스터디를 했을 당시에는 플레이어의 기본적인 동작, 키보드 이벤트만 구현이 되어 있는 상태였습니다. 이후, 학술제를 위해 Score에 따른 Perfect 엔딩, 몬스터 피력, 플레이어를 따라가는 AI몬스터 등 게임성을 더해 학술제에서 수상할 수 있었습니다.',
+      '플레이어 이동, 키보드 이벤트, 점수 기반 엔딩 분기, 몬스터 체력 시스템, 플레이어 추적 몬스터 등을 구현했습니다. 단순 동작 구현에서 그치지 않고 게임 진행 흐름과 사용자 경험을 고려해 기능을 확장하며 완성도를 높였습니다.',
     url: '',
-    repo: 'https://github.com/dayoungee/judygohome', // if no repo, the button will not show up
+    repo: 'https://github.com/dayoungee/judygohome',
   },
   {
     id: 2,
     img: '02.png',
     title: 'Tetris',
-    date: '(2020.02~2020.03)',
-    info: 'MFC를 활용한 다이얼로그 기반의 테트리스 게임입니다. MFC 스터디 용으로 개발했습니다.',
+    date: '(2020.02 ~ 2020.03)',
+    info: 'C++과 MFC를 활용해 개발한 다이얼로그 기반 테트리스 게임입니다.',
     info2:
-      '첫 직장에서 사용하던 MFC, C++ 언어에 익숙해지기 위해서 공부용으로 개발한 게임입니다. 레지스트리 값을 이용해 게임의 배경색을 변경 가능하도록 구현하였으며, TCP통신을 통한 1대1 채팅, MySQL를 활용하여 간단한 로그인, 회원가입 기능을 구현했습니다.',
+      'MFC와 C++ 기반 애플리케이션 구조에 익숙해지기 위해 진행한 개인 프로젝트입니다. 게임 로직 구현뿐 아니라 레지스트리를 활용한 배경색 설정, TCP 통신 기반 1:1 채팅, MySQL 기반 로그인 및 회원가입 기능을 함께 구현하며 클라이언트 프로그램과 데이터 연동 흐름을 경험했습니다.',
     url: '',
-    repo: 'https://github.com/dayoungee/Tetris', // if no repo, the button will not show up
+    repo: 'https://github.com/dayoungee/Tetris',
   },
-  /* {
-    id: 3,
-    img: '04.png',
-    title: '포트폴리오',
-    date: '(2022.05~)',
-    info: 'react로 개발한 개인 포트폴리오 웹 사이트입니다.',
-    info2:
-        '본래 있던 디자인 템플릿을 따와, 메인페이지를 수정하고, 헤더와 모달 기능을 추가했습니다.',
-    url: '',
-    repo: 'https://github.com/dayoungee/portfolio',
-  }, */
   {
     id: 3,
     img: '04.png',
     title: 'Stackoverflow Clone Coding',
-    date: '(2023.06.14~2023.06.26)',
-    info: '프론트 엔드 4명, 백엔드 3명 총 7명으로 구성된 팀에서 개발한 Stackoverflow Clone Coding 프로젝트입니다.',
+    date: '(2023.06.14 ~ 2023.06.26)',
+    info: '프론트엔드 4명, 백엔드 3명으로 구성된 팀에서 진행한 Stack Overflow 클론 프로젝트입니다.',
     info2:
-      'Stackoverflow의 Q&A 게시판 기능을 똑같이 구현한 프로젝트입니다. 해당 팀에서 팀장을 맡았으며, 테스트 서버(EC2)와 CI/CD(Jenkins)를 직접 구축하여 배포 관련 경험을 쌓을 수 있었고, 테스트 코드도 작성했기에 의미있는 프로젝트였습니다.',
+      '팀장을 맡아 백엔드 개발 일정과 협업 흐름을 관리했으며, Q&A 게시판의 Question 도메인 API 개발을 담당했습니다. AWS EC2 기반 테스트 서버와 Jenkins CI/CD 환경을 구축했고, Spring Rest Docs와 Swagger UI를 연동하여 프론트엔드와 협업하기 위한 API 문서화 환경을 구성했습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/stackoverflow-clone-coding',
   },
@@ -106,14 +95,16 @@ export const projectsData = [
     id: 4,
     img: '04.png',
     title: 'PliP',
-    date: '(2023.06.29~2023.07.21)',
-    info: '프론트 엔드 3명, 백엔드 3명 총 6명으로 구성된 팀에서 개발한 여행 일정 관리 및 일지 작성 웹 서비스 입니다.',
+    date: '(2023.06.29 ~ 2023.07.21)',
+    info: '프론트엔드 3명, 백엔드 3명으로 구성된 팀에서 개발한 여행 일정 관리 및 여행 일지 작성 웹 서비스입니다.',
     info2:
-      'JWT 인증 방식을 처음으로 직접 사용했으며, 실제로 개발을 함으로써 Spring Security, OAuth2.0에 대해서 학습할 수 있었고, 말로만 들었던 Redis를 사용해볼 수 있었습니다. 마지막으로 JavaMailSender를 사용함으로써 메일 전송 기능을 구현할 수 있었습니다.',
+      '회원 도메인을 담당하여 회원 CRUD, JWT 기반 인증, OAuth2 소셜 로그인, Redis 기반 토큰 블랙리스트 기능을 구현했습니다. 또한 N+1 문제가 발생한 구간을 확인하고 Batch Size를 조정하여 쿼리 수를 줄이는 등 성능 개선을 함께 진행했습니다.',
     url: '',
     repo: 'https://github.com/dayoungee/plip',
   },
 ];
+
+
 
 // CONTACT DATA
 export const contactData = {
