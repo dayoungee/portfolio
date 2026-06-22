@@ -23,7 +23,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '안녕하세요, 열정 가득한 개발자 윤다영입니다.',
+  paragraphOne: '안녕하세요, 백엔드 개발자 윤다영입니다.',
   paragraphTwo: '나를 한마디로 표현한다면? "중력(Gravity)" 같은 사람! 중력처럼 사람을 끌어당기는 힘으로 협업과 소통을 통해 프로젝트를 이끌겠습니다. ' +
     '앞으로의 성장을 위해 항상 도전하고, 실천하는 백엔드 개발자가 될 것 입니다.',
   paragraphThree: '감사합니다.',
