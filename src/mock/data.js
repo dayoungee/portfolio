@@ -23,9 +23,9 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '안녕하세요, 백엔드 개발자 윤다영입니다.',
-  paragraphTwo: '나를 한마디로 표현한다면? "중력(Gravity)" 같은 사람! 중력처럼 사람을 끌어당기는 힘으로 협업과 소통을 통해 프로젝트를 이끌겠습니다. ' +
-    '앞으로의 성장을 위해 항상 도전하고, 실천하는 백엔드 개발자가 될 것 입니다.',
+  paragraphOne: '서비스의 흐름을 이해하고 개선하는 5년차 개발자, 윤다영입니다.',
+  paragraphTwo: 'MFC 기반 애플리케이션 개발과 실서비스 운영 경험을 시작으로, 현재는 Java/Spring Boot 기반 백엔드 개발자로 커리어를 확장해 회원 서비스, 팬덤 앱 서비스, 커머스 서비스의 API 개발과 운영을 경험했습니다. ' +
+    '기능 구현에 그치지 않고 서비스 구조와 사용자 흐름을 고려하며, 안정적이고 확장 가능한 백엔드 개발을 지향합니다.',
   paragraphThree: '감사합니다.',
   resume: 'https://glass-milkshake-24b.notion.site/1f555e850383480ebff9a6bb3274fd1d?pvs=4',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
