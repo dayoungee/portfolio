@@ -25,7 +25,7 @@ const Career = () => {
       <Container>
         <Title title="Career" />
         <p className="section-description">
-          소프트웨어 개발 경험을 바탕으로 백엔드 개발자로 영역을 확장했습니다.
+          C++/MFC 소프트웨어 개발에서 Java/Spring Boot 백엔드 개발로 이어진 경력입니다.
         </p>
         <div className="career-timeline">
           {careers.map((career) => {

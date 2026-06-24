@@ -12,7 +12,7 @@ const Hero = () => (
           {' Portfolio'}
         </h1>
         <p className="hero-description">
-          애플리케이션 개발부터 백엔드 API 개발과 서비스 운영까지,
+          소프트웨어 개발부터 백엔드 API 개발과 서비스 운영까지,
           <br className="desktop-break" />
           다양한 환경에서 경험을 쌓아왔습니다.
         </p>

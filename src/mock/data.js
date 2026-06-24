@@ -24,7 +24,7 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: '좋은 소통이 좋은 서비스를 만든다고 믿는 5년차 개발자, 윤다영입니다.',
-  paragraphTwo: 'MFC/C++ 기반 소프트웨어 개발 및 운영 경험을 시작으로, Java/Spring Boot 기반 백엔드 개발까지 영역을 넓혀왔습니다. 원활한 소통과 협업을 바탕으로 문제를 해결하고, 팀과 함께 신뢰할 수 있는 서비스를 만들어가고자 합니다.',
+  paragraphTwo: '다양한 직군 및 외부 협력사와 함께 일하며, 서로의 요구사항을 정확히 이해하고 공유하는 과정의 중요성을 배웠습니다. 원활한 협업을 바탕으로 팀과 함께 신뢰할 수 있는 서비스를 만들어가고자 합니다.',
   paragraphThree: '감사합니다.',
   resume: 'https://glass-milkshake-24b.notion.site/1f555e850383480ebff9a6bb3274fd1d?pvs=4',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
@@ -36,21 +36,21 @@ export const careerData = [
     id: 1,
     name: "(주)제네시스네스트",
     date: "2024.01 ~",
-    description: "BackEnd 개발을 담당하고 있는 서버팀에 정규직으로 입사",
+    description: "서버팀에서 백엔드 개발을 담당하고 있습니다.",
     img: "https://github.com/dayoungee/portfolio/assets/55998706/cf76a3a6-d8e0-4ca1-baa3-cb03673cb2a3"
   },
   {
     id: 2,
     name: "(주)케이씨티",
     date: "2021.03 ~ 2023.02",
-    description: "금융 및 공공 부문의 단말 시스템 제조 회사로 소프트웨어 개발을 담당하고 있는 연구 2팀에 정규직으로 입사",
+    description: "금융 및 공공 부문의 단말·키오스크 소프트웨어를 개발했습니다.",
     img: "https://user-images.githubusercontent.com/55998706/257448287-ee2b6d50-4060-43be-857b-d46e256881cb.png"
   },
   {
     id: 3,
     name: "뉴크",
     date: "2020.02 ~ 2020.09",
-    description: "건축관련 SW를 개발하는 스타트업으로 6개월 계약직으로 입사 후, 연장 근무",
+    description: "건축 공사 분석 소프트웨어를 개발하고 데이터 처리 과정을 개선했습니다.",
     img: "https://user-images.githubusercontent.com/55998706/257444556-3b6665f2-cc36-4056-b49f-a0b74e7d16d1.jpg"
   }
 ];
