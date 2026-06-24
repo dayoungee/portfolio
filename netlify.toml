@@ -3,7 +3,7 @@ NODE_VERSION = "18"
 NPM_FLAGS = "--legacy-peer-deps"
 
 [[headers]]
-for = "/service-worker.js"
+for = "/sw.js"
 
 [headers.values]
 Cache-Control = "no-cache, no-store, must-revalidate"
