@@ -1,74 +1,49 @@
-import React, {useContext, useEffect, useState} from 'react';
-import { Link } from "react-scroll";
-import { AiOutlineMenu } from "react-icons/ai";
-import PortfolioContext from "../../context/context";
-import Mobilemenu from "../MobieMenu/Mobilemenu";
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+import { AiOutlineMenu } from 'react-icons/ai';
+import PortfolioContext from '../../context/context';
+import Mobilemenu from '../MobieMenu/Mobilemenu';
 
 function Header() {
-    const { header } = useContext(PortfolioContext);
-    const { title, menu, click } = header;
+  const { header } = useContext(PortfolioContext);
+  const { menu, click } = header;
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    const updateScroll = () => setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    window.addEventListener('scroll', updateScroll);
+    return () => window.removeEventListener('scroll', updateScroll);
+  }, []);
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [resize, setResize] = useState(0);
-    const [toggle, setToggle] = useState(false);
-
-    const handleResize = () => {
-        setResize(window.innerWidth);
-        console.log(window.innerWidth);
-    };
-
-    const updateScroll = () => {
-        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-    }
-
-    const handleToggle = () => {
-        setToggle(!toggle);
-    }
-
-    useEffect(()=>{
-        console.log(toggle);
-    },[toggle]);
-
-    useEffect(()=>{
-        window.addEventListener('scroll', updateScroll);
-    });
-
-    useEffect(() => {
-        setResize(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
-    return(
-      <div id={scrollPosition < 100 ? "header" : "change-header"}>
-        <nav className="header-wrapper">
-          <Link className="header-wrapper-title" to="hero" smooth duration={1000}>
-            { title || 'YDY portfolio' }
-          </Link>
-          {resize > 577 ? (
-            <ul className="header-wrapper_ul">
-              <div>
-                {menu && menu.map((item, i) => (
-                  <li className="header-wrapper_li">
-                    <Link to={click[i] || '#!'} smooth duration={1000}>
-                      {item}
-                    </Link>
-                  </li>
-                    ))}
-              </div>
-            </ul>
-            ) : (
-              <div>
-                <AiOutlineMenu className="mobile-icon" onClick={handleToggle} />
-                {toggle ? <Mobilemenu /> : null}
-              </div>
-              )}
-        </nav>
-      </div>
-    );
+  return (
+    <header className={scrollPosition > 20 ? 'site-header site-header--scrolled' : 'site-header'}>
+      <nav className="header-wrapper">
+        <Link className="header-wrapper-title" to="hero" smooth duration={800}>
+          <span>YDY</span>
+          <small>PORTFOLIO</small>
+        </Link>
+        <ul className="header-wrapper__menu">
+          {menu && menu.map((item, i) => (
+            <li key={item}>
+              <Link to={click[i] || '#!'} smooth duration={800}>
+                {item.replace(' ME', '')}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button
+          className="mobile-menu-button"
+          type="button"
+          aria-label="메뉴 열기"
+          onClick={() => setToggle(!toggle)}
+        >
+          <AiOutlineMenu />
+        </button>
+        {toggle ? <Mobilemenu close={() => setToggle(false)} /> : null}
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

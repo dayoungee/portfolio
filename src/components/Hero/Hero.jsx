@@ -1,62 +1,75 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
 
-const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  },[]);
-
-  return (
-    <section id="hero" className="jumbotron">
-      <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            <span className="text-color-main">
-              {title || '윤다영'}
+const Hero = () => (
+  <section id="hero">
+    <Container className="hero-layout">
+      <div className="hero-copy">
+        <p className="hero-eyebrow">DEVELOPER · 5 YEARS</p>
+        <h1 className="hero-title">
+          <span>윤다영</span>
+          {' Portfolio'}
+        </h1>
+        <p className="hero-description">
+          애플리케이션 개발부터 백엔드 API 개발과 서비스 운영까지,
+          <br className="desktop-break" />
+          다양한 환경에서 경험을 쌓아왔습니다.
+        </p>
+        <div className="hero-actions">
+          <Link className="button button--primary" to="projects" smooth duration={800}>
+            프로젝트 보기
+          </Link>
+          <Link className="button button--ghost" to="career" smooth duration={800}>
+            경력 살펴보기
+          </Link>
+        </div>
+        <ul className="hero-stack" aria-label="주요 기술">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Redis</li>
+          <li>AWS · Azure</li>
+        </ul>
+      </div>
+      <div className="hero-visual" aria-hidden="true">
+        <div className="hero-visual__glow" />
+        <div className="code-card">
+          <div className="code-card__top">
+            <span />
+            <span />
+            <span />
+            <strong>service.yml</strong>
+          </div>
+          <div className="code-card__body">
+            <p>
+              <b>service:</b>
+              {' reliable-api'}
+            </p>
+            <p>
+              <b>runtime:</b>
+              {' java'}
+            </p>
+            <p>
+              <b>framework:</b>
+              {' spring-boot'}
+            </p>
+            <p>
+              <b>status:</b>
               {' '}
-            </span>
-            {name || '의 포트폴리오'}
-            <br />
-            {subtitle || "I'm the Developer."}
-          </h1>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
-              </Link>
-            </span>
-          </p>
-        </Fade>
-        {
-          isDesktop ? (
-            <div className="ocean">
-              <div className="wave" />
-              <div className="wave" />
-            </div>
-          )
-              : <div />
-          
-        }
-      </Container>
-    </section>
-  );
-};
+              <em>healthy</em>
+            </p>
+          </div>
+        </div>
+        <div className="status-card">
+          <span className="status-card__dot" />
+          <div>
+            <strong>Production Ready</strong>
+            <small>소통하며 함께 만드는 개발</small>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </section>
+);
 
-export default Header;
+export default Hero;

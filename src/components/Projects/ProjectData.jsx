@@ -28,8 +28,7 @@ const ProjectData = ({ projectId }) => (
 );
 
 ProjectData.propTypes = {
-    // eslint-disable-next-line react/require-default-props
-    projectId: PropTypes.string
+    projectId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default ProjectData;

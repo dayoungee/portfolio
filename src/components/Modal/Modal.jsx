@@ -50,8 +50,7 @@ function Modal( props ){
 
 Modal.propTypes = {
     open: PropTypes.bool.isRequired,
-    // eslint-disable-next-line react/forbid-prop-types
-    close: PropTypes.object.isRequired,
+    close: PropTypes.func.isRequired,
     id: PropTypes.number.isRequired
 };
 

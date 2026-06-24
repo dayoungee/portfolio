@@ -14,12 +14,12 @@ const Slider = ( props ) => {
         }else{
             setPath(projectImage[id-1].path);
         }
-    },[projectImage]);
+    },[id, projectImage]);
 
     return(
       <Carousel className="carousel" autoPlay animation="slide">
         {
-                path.map( (item) => <Item item={item} /> )
+                path.map( (item) => <Item key={item} item={item} /> )
         }
       </Carousel>
     )

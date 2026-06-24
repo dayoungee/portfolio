@@ -1,139 +1,73 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useContext, useState } from 'react';
+import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import Modal from "../Modal/Modal";
-import Slider from "../Slider/Slider";
+import Modal from '../Modal/Modal';
+import Slider from '../Slider/Slider';
+
+const projectStacks = {
+  1: ['C#', 'Unity', 'Game'],
+  2: ['C++', 'MFC', 'TCP', 'MySQL'],
+  3: ['Java', 'Spring Boot', 'AWS', 'Jenkins'],
+  4: ['Java', 'Spring Boot', 'Redis', 'OAuth2'],
+};
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [useId, setUseId] = useState(0);
+  const [selectedId, setSelectedId] = useState(0);
 
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
-  const openModal = (id) => () => {
+  const openModal = (id) => {
+    setSelectedId(id);
     setModalOpen(true);
-    setUseId(id);
-  };
-  const closeModal = () => {
-    setModalOpen(false);
   };
 
   return (
-    <div>
-      <Modal close={closeModal} open={modalOpen} id={useId || 0} />
-      <section id="projects">
-        <Container>
-          <div className="project-wrapper">
-            <Title title="Projects" />
-            {projects.map((project) => {
-            const { title, info, info2, repo, id, date } = project;
-
+    <section id="projects">
+      <Modal close={() => setModalOpen(false)} open={modalOpen} id={selectedId} />
+      <Container>
+        <Title title="Selected Projects" />
+        <p className="section-description">
+          새로운 기술을 익히고 직접 구현하며 경험을 넓혀온 사이드 프로젝트입니다.
+        </p>
+        <div className="project-grid">
+          {projects.map((project) => {
+            const { title, info, repo, id, date } = project;
             return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <p className="project-wrapper__text-date"> 
-                        {' '}
-                        {date || 'None'}
-                      </p>
-                      <div>
-                        <p className="project-wrapper__text-info">
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid,react/button-has-type */}
-                      <button
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        onClick={openModal(id)}
-                      >
-                        More
-                      </button>
-                      {repo && (
-
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          /* className="cta-btn cta-btn--hero" */
-                          className="cta-btn text-color-main"
-                          href={repo || '#!'}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      {/* <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      > */}
-                      <Tilt
-                        options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                      >
-                        <div data-tilt className="thumbnail rounded">
-                          {/* <ProjectImg alt={title} filename={img} /> */}
-                          <Slider id={id} />
-                        </div>
-                      </Tilt>
-                      {/* </a> */}
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
+              <article className="project-card" key={id}>
+                <div className="project-card__media">
+                  <Slider id={id} />
+                  <span className="project-card__number">
+                    0
+                    {id}
+                  </span>
+                </div>
+                <div className="project-card__body">
+                  <p className="project-card__date">{date}</p>
+                  <h3>{title}</h3>
+                  <p className="project-card__summary">{info}</p>
+                  <ul className="tag-list">
+                    {(projectStacks[id] || []).map((stack) => <li key={stack}>{stack}</li>)}
+                  </ul>
+                  <div className="project-card__actions">
+                    <button type="button" className="text-link" onClick={() => openModal(id)}>
+                      상세보기
+                      <span aria-hidden="true">→</span>
+                    </button>
+                    {repo && (
+                      <a className="text-link text-link--muted" href={repo} target="_blank" rel="noopener noreferrer">
+                        GitHub
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </article>
             );
           })}
-          </div>
-        </Container>
-      </section>
-    </div>
+        </div>
+      </Container>
+    </section>
   );
 };
 
