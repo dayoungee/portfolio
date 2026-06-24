@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -23,31 +23,21 @@ import Header from "./Header/Header";
 import Career from "./Carrer/Career";
 
 function App() {
-  const [hero, setHero] = useState({});
-  const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
-  const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
-  const [header, setHeader] = useState({});
-  const [project, setProject] = useState([]);
-  const [projectImage, setProjectImage] = useState([]);
-  const [projectFont, setProjectFont] = useState({});
-  const [careers, setCareers] = useState([]);
+  const portfolioData = {
+    hero: heroData,
+    about: aboutData,
+    projects: projectsData,
+    contact: contactData,
+    footer: footerData,
+    header: headerData,
+    project: projectData,
+    projectImage: projectImageData,
+    projectFont: projectFontData,
+    careers: careerData,
+  };
 
-  useEffect(() => {
-    setHero({ ...heroData });
-    setAbout({ ...aboutData });
-    setProjects([...projectsData]);
-    setContact({ ...contactData });
-    setFooter({ ...footerData });
-    setHeader({ ...headerData });
-    setProject([ ...projectData ]);
-    setProjectImage([ ...projectImageData ]);
-    setProjectFont({ ...projectFontData });
-    setCareers([ ...careerData ]);
-  }, []);
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer, header, project, projectImage, projectFont, careers }}>
+    <PortfolioProvider value={portfolioData}>
       <Header />
       <Hero />
       <About />
