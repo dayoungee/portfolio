@@ -26,7 +26,7 @@ const Projects = () => {
     <section id="projects">
       <Modal close={() => setModalOpen(false)} open={modalOpen} id={selectedId} />
       <Container>
-        <Title title="Selected Projects" />
+        <Title title="Side Projects" />
         <p className="section-description">
           새로운 기술을 익히고 직접 구현하며 경험을 넓혀온 사이드 프로젝트입니다.
         </p>

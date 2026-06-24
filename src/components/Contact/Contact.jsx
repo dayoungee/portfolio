@@ -24,7 +24,7 @@ const Contact = () => {
               className="cta-btn cta-btn--hero"
               href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
             >
-              {btn || "Let's Talk"}
+              {btn || '이메일 보내기'}
             </a>
           </div>
         </Fade>

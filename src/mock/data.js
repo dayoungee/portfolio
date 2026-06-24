@@ -9,8 +9,8 @@ export const headData = {
 
 export const headerData = {
   title: 'YDY PORTFOLIO',
-  menu: ['ABOUT ME', 'PROJECTS', 'CAREER', 'CONTACT'],
-  click: ["about", "projects", "career", "contact"],
+  menu: ['ABOUT', 'CAREER', 'PROJECTS', 'CONTACT'],
+  click: ["about", "career", "projects", "contact"],
 }
 // HERO DATA
 export const heroData = {
@@ -23,8 +23,8 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '서비스를 만들고 운영하며 경험을 넓혀온 5년차 개발자, 윤다영입니다.',
-  paragraphTwo: 'MFC 기반 애플리케이션 개발과 실서비스 운영으로 커리어를 시작해, Java/Spring Boot 기반 백엔드 개발로 영역을 확장했습니다. 회원, 팬덤 앱, 커머스 서비스의 API를 개발하고 운영했으며, 기능 구현을 넘어 안정적인 서비스 운영에 기여하는 개발을 지향합니다.',
+  paragraphOne: '좋은 소통이 좋은 서비스를 만든다고 믿는 5년차 개발자, 윤다영입니다.',
+  paragraphTwo: 'MFC/C++ 기반 소프트웨어 개발 및 운영 경험을 시작으로, Java/Spring Boot 기반 백엔드 개발까지 영역을 넓혀왔습니다. 원활한 소통과 협업을 바탕으로 문제를 해결하고, 팀과 함께 신뢰할 수 있는 서비스를 만들어가고자 합니다.',
   paragraphThree: '감사합니다.',
   resume: 'https://glass-milkshake-24b.notion.site/1f555e850383480ebff9a6bb3274fd1d?pvs=4',
   // 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up

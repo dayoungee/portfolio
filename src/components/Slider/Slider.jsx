@@ -17,7 +17,7 @@ const Slider = ( props ) => {
     },[id, projectImage]);
 
     return(
-      <Carousel className="carousel" autoPlay animation="slide">
+      <Carousel className="carousel" autoPlay={false} animation="fade">
         {
                 path.map( (item) => <Item key={item} item={item} /> )
         }

@@ -41,8 +41,8 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Projects />
       <Career />
+      <Projects />
       <Contact />
       <Footer />
     </PortfolioProvider>

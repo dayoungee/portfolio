@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="About" />
         <Row className="about-card">
           <Col lg={4} md={5}>
             <div className="about-card__profile">
@@ -28,12 +28,12 @@ const About = () => {
               <p>{paragraphTwo}</p>
               <div className="about-strengths">
                 <div>
-                  <strong>Application</strong>
-                  <span>클라이언트 개발 경험</span>
+                  <strong>Backend</strong>
+                  <span>Java · Spring Boot</span>
                 </div>
                 <div>
-                  <strong>Backend</strong>
-                  <span>API 설계 및 개발</span>
+                  <strong>Software</strong>
+                  <span>C++ · MFC</span>
                 </div>
                 <div>
                   <strong>Operation</strong>

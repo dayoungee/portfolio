@@ -1,24 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
 import ProjectData from '../Projects/ProjectData';
 
 const roles = {
-  1: 'Backend Developer',
-  2: 'Software Developer',
-  3: 'Application Developer',
+  1: '백엔드 개발',
+  2: '소프트웨어 개발',
+  3: '애플리케이션 개발',
 };
 
 const Career = () => {
   const { careers } = useContext(PortfolioContext);
+  const [expandedIds, setExpandedIds] = useState([]);
+
+  const toggleCareer = (id) => {
+    setExpandedIds((current) => (
+      current.includes(id) ? current.filter((item) => item !== id) : [...current, id]
+    ));
+  };
 
   return (
     <section id="career">
       <Container>
         <Title title="Career" />
         <p className="section-description">
-          애플리케이션 개발에서 시작해 실서비스 백엔드 개발과 운영으로 경험을 확장했습니다.
+          소프트웨어 개발 경험을 바탕으로 백엔드 개발자로 영역을 확장했습니다.
         </p>
         <div className="career-timeline">
           {careers.map((career) => {
@@ -32,8 +39,16 @@ const Career = () => {
                   <h3>{name}</h3>
                   <strong>{roles[id]}</strong>
                   <span>{description}</span>
+                  <button
+                    className="career-item__toggle"
+                    type="button"
+                    aria-expanded={expandedIds.includes(id)}
+                    onClick={() => toggleCareer(id)}
+                  >
+                    {expandedIds.includes(id) ? '주요 업무 접기' : '주요 업무 보기'}
+                  </button>
                 </div>
-                <div className="career-item__details">
+                <div className={`career-item__details ${expandedIds.includes(id) ? 'career-item__details--open' : ''}`}>
                   <ProjectData projectId={100 - id} />
                 </div>
               </article>

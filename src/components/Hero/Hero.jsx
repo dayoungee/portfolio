@@ -6,7 +6,7 @@ const Hero = () => (
   <section id="hero">
     <Container className="hero-layout">
       <div className="hero-copy">
-        <p className="hero-eyebrow">DEVELOPER · 5 YEARS</p>
+        <p className="hero-eyebrow">5년차 개발자</p>
         <h1 className="hero-title">
           <span>윤다영</span>
           {' Portfolio'}
@@ -63,8 +63,8 @@ const Hero = () => (
         <div className="status-card">
           <span className="status-card__dot" />
           <div>
-            <strong>Production Ready</strong>
-            <small>소통하며 함께 만드는 개발</small>
+            <strong>함께 만드는 개발</strong>
+            <small>소통과 협업을 중요하게 생각합니다</small>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import PortfolioContext from '../../context/context';
 import Mobilemenu from '../MobieMenu/Mobilemenu';
 
@@ -15,6 +15,24 @@ function Header() {
     window.addEventListener('scroll', updateScroll);
     return () => window.removeEventListener('scroll', updateScroll);
   }, []);
+
+  useEffect(() => {
+    const closeMenu = (event) => {
+      if (event.key === 'Escape' || window.innerWidth > 600) {
+        setToggle(false);
+      }
+    };
+
+    document.body.style.overflow = toggle ? 'hidden' : '';
+    window.addEventListener('keydown', closeMenu);
+    window.addEventListener('resize', closeMenu);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', closeMenu);
+      window.removeEventListener('resize', closeMenu);
+    };
+  }, [toggle]);
 
   return (
     <header className={scrollPosition > 20 ? 'site-header site-header--scrolled' : 'site-header'}>
@@ -35,10 +53,11 @@ function Header() {
         <button
           className="mobile-menu-button"
           type="button"
-          aria-label="메뉴 열기"
+          aria-label={toggle ? '메뉴 닫기' : '메뉴 열기'}
+          aria-expanded={toggle}
           onClick={() => setToggle(!toggle)}
         >
-          <AiOutlineMenu />
+          {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
         {toggle ? <Mobilemenu close={() => setToggle(false)} /> : null}
       </nav>
